@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="description" content="formulario" >
+    <meta name="keywords" content="formulario,radio button" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="styelsheet" href="./css/style_formu.css" >
+    <title>Formularios</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h2>Formulario Datos</h2>
+      </header>
+      <form action="#" name="formu1" method="get">
+        <fieldset>
+          <legend>Ingresar</legend>
+          <div>
+            <label for="txt_nombre">Nombre</label>
+            <input type="text" id="txt_nombre" placeholder="Ingresa tu Nombre">
+          </div>
+          <div>            
+            <label for="txt_comentario">Comentario</label>
+            <textarea id="txt_comentario" rows="3" cols="50"></textarea>
+          </div>
+          <div>
+            <label for="opt_marca">Marcas</label>
+            <select id="opt_marca">
+              <optgroup label="Nacional">
+                <option value="1">Pierre</option>
+                <option value="2">Bronco</option>
+                <option value="3">Ripsol</option>
+              </optgroup>
+              <optgroup label="Extranjero">
+                <option value="4">Nike</option>
+                <option value="5">Sagafalabella</option>
+                <option value="6">Ripley</option>
+              </optgroup>
+            </select>
+          </div>
+          <div>
+            <label for="pr_porcentaje">cargando archivo</label>
+            <progress id="pr_porcentaje" max="100" value="70">720%</progress>
+          </div>
+          <div>            
+            <input type="checkbox" id="chk_condicion" value="condicion_si">
+            <label for="chk_condicion">Condición</label>
+          </div>
+        </fieldset>
+        <div>
+            <button  type="button" id="btn_mostrar_valor">Mostrar Valores</button>
+            <input type="reset" id="btn_limpiar" value="Limpiar">
+            <input type="submit" id="btn_enviar" value="Enviar">
+        </div>
+        <fieldset>
+            <legend>Seleccionar Color</legend>
+            <input type="radio" name="color" id="rb_color_rojo" value="Rojo"  onclick="radio_click()" checked><label for="rb_color_rojo">Rojo</label>
+            <input type="radio" name="color" id="rb_color_azul" value="Azul" onclick="radio_click()"><label for="rb_color_rojo">Azul</label>
+            <input type="radio" name="color" id="rb_color_amarillo" value="Amarillo" onclick="radio_click()"><label for="rb_color_rojo">Amarillo</label>
+            <input type="button" id="btn_mostrar_valor_radio" value="Mostrar Valor de Radio">
+        </fieldset>
+      </form>
+    </section>
+    <footer>
+      <address>Av. La Paz 365 - Miraflores</address>
+    </footer>
+
+    <script src="./script/formulario.js"></script>
+
+  </body>
+</html>
